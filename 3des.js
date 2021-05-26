@@ -227,7 +227,8 @@
     return CFBb;
 }());
 
-const keyHex = CryptoJS.enc.Utf8.parse(document.getElementsByClassName('key')[0].id)
+const key = '12345678secretos12345678'
+const keyHex = CryptoJS.enc.Utf8.parse(key)
 const iv1 = document.getElementsByClassName('iv')[0].id;
 const mensaje = document.getElementsByClassName('3des')[0].id;
 

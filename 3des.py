@@ -1,13 +1,19 @@
 from Crypto.Cipher import DES3
 
-llave = '12345678secretos12345678'
-iv = '13245678'
+llave = ''
+iv = ''
+while True:
+    llave = input('Ingresar llave de 16 o 24 bytes: ')
+    if (len(llave) == 16 or len(llave) == 24) : break
+while True:
+    iv = input('Ingresar IV de 8 bytes: ')
+    if (len(iv) == 8) : break
+textoPlano = input('Ingresar texto que debe ser cifrado: ')
 #representarlo a bytes
 keyb = bytes(llave, 'Utf-8')
 text1 = bytes(iv, 'Utf-8')
 
 encriptar = DES3.new(keyb, DES3.MODE_CFB, text1)
-textoPlano = 'un mensaje que deberia ser secreto'
 text = bytes(textoPlano, 'Utf-8')
 
 ciphertext = encriptar.encrypt(text)
@@ -24,11 +30,10 @@ html.write('''<!DOCTYPE html>
         <body>
             <p>Vista que contiene un mensaje secreto.</p>
             <div class="3des" id= "%s">%s</div>
-            <div class="key" id= "%s"></div>
             <div class="iv" id= "%s"></div>
         </body>
     </html>
-        '''% (textocifrado, textocifrado,llave, iv))
+        '''% (textocifrado, textocifrado, iv))
 
 html.close()
 
