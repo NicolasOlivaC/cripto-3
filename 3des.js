@@ -7,6 +7,8 @@
 // @match        file:///C:/Users/Nico/Desktop/CRIPTO3/algo/index.html
 // @grant        none
 // @require      https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.0.0/crypto-js.min.js
+// @downloadURL  https://github.com/NicolasOlivaC/cripto-3/edit/master/3des.js
+// @updateURL    https://github.com/NicolasOlivaC/cripto-3/edit/master/3des.js
 // ==/UserScript==
 
 /**
