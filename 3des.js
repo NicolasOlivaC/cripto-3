@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Script cifrado
 // @namespace    http://tampermonkey.net/
-// @version      0.1
+// @version      1.0
 // @description  try to take over the world!
 // @author       Nicolas Oliva
 // @match        file:///C:/Users/Nico/Desktop/CRIPTO3/algo/index.html
