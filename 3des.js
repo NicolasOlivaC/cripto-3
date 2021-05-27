@@ -247,3 +247,4 @@ var decoded = CryptoJS.TripleDES.decrypt(
 const  encode = decoded.toString(CryptoJS.enc.Utf8)
 console.log(encode)
 document.getElementsByClassName('3des')[0].innerHTML = encode
+console.log("update!!!")
